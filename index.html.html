@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รักปีศาจหมู | Minimal Thai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS สำหรับการจัดสไตล์แบบ Minimal */
+        :root {
+            --primary-color: #ffffff; /* น้ำตาลเข้ม */
+            --secondary-color: #a1887f; /* น้ำตาลกลาง */
+            --bg-color-light: #f5f5dc; /* ครีม/เบจ */
+            --bg-color-dark: #4e342e; /* น้ำตาลเข้มเกือบดำ */
+            --text-color: #3e2723; /* น้ำตาลเข้มมาก */
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color-light);
+            color: var(#ffffff);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header และ Navigation */
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            color: #a86a2fd7;
+        }
+
+        header h1 {
+            font-weight: 300;
+            font-size: 2.5rem;
+            margin: 0;
+            color: var(#8f4216);
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            margin: 0 1rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2023/04/24/5608757681874e1ea5df1aa41d5b2e3d_How_To_Make_Tom_Yam_Kung_The_Epitome_Of_Delicious_And_Nutritious_Thai_Cuisine3.jpg'); /* เปลี่ยนเป็นรูปของคุณ */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: #795548;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-content {
+            z-index: 1;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        .hero-content h2 {
+            font-weight: 300;
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Menu Section */
+        .menu-section {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .menu-section h2 {
+            font-weight: 300;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-item {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .item-info {
+            padding: 1.5rem;
+        }
+
+        .item-info h3 {
+            font-weight: 400;
+            font-size: 1.25rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-info p {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 4rem 0;
+            background-color: #8f4216;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-weight: 300;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .about-section p {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: var(--bg-color-dark);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>ชื่อหมีคลั่ง🐻🐻🐻 </h1>
+            <h1>
+            </h1>
+            <nav>
+                <a href="#menu">เมนู</a>
+                <a href="#about">เกี่ยวกับเรา</a>
+                <a href="#contact">ติดต่อ</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h2>เรียบง่าย แต่ได้รส</h2>
+        </div>
+    </div>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>เมนูแนะนำ</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://www.unileverfoodsolutions.co.th/dam/global-ufs/mcos/SEA/calcmenu/recipes/TH-recipes/pasta-dishes/%E0%B8%9C%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B8%E0%B9%89%E0%B8%87%E0%B8%AA%E0%B8%94/%E0%B8%9C%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B8%E0%B9%89%E0%B8%87%E0%B8%AA%E0%B8%94_header.jpg" alt="ผัดไทยกุ้งหมดอดกิน">
+                    <div class="item-info">
+                        <h3>ผัดไทย</h3>
+                        <p>เมนูไทยยอดนิยม เส้นเหนียวนุ่ม ผัดกับซอสสูตรลับ</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2022/09/16/f083c309eaab40b8b21efa7eaeda4b87_How_To_Make_Thai_Green_Curry_Like_A_MICHELIN_Starred_Restaurant2.jpg" alt="แกงเขียวหวานไก่กุ๊กๆ🐓🐓">
+                    <div class="item-info">
+                        <h3>แกงเขียวหวานไก่</h3>
+                        <p>รสชาติเข้มข้น หอมกะทิและเครื่องแกง</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.senate.go.th/assets/portals/386/fileups/676/images/%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B2%20%E0%B8%A7%E0%B8%B8%E0%B8%92%E0%B8%B4%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B8%A2/1Issue/12-67%20tomyumkung/eBook_tomyam_Page_09.jpg" alt="ต้มยำกุ้งปีศาจ">
+                    <div class="item-info">
+                        <h3>ต้มยำกุ้ง</h3>
+                        <p>รสชาติจัดจ้าน เปรี้ยว เผ็ดร้อน หอมกลิ่นสมุนไพร</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>เรื่องราวของเรา</h2>
+            <p>เราเชื่อว่าความอร่อยเริ่มต้นจากความเรียบง่าย ด้วยการคัดสรรวัตถุดิบคุณภาพดีที่สุดและปรุงอย่างพิถีพิถัน เพื่อให้คุณได้สัมผัสรสชาติไทยแท้ที่ลึกซึ้งและไม่ซับซ้อน</p>
+            
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>ติดต่อเรา</p>
+            <p>123 ถนนสุขุมวิท, กรุงเทพฯ | โทร: 02-123-4567 | อีเมล: hello@yourrestaurant.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
